@@ -8,7 +8,10 @@ from FlagEmbedding import FlagReranker
 app = FastAPI()
 
 # Setting use_fp16 to True speeds up computation with a slight performance degradation
-reranker = FlagReranker('BAAI/bge-reranker-v2-m3', use_fp16=True, cache_dir="/cache_model")
+reranker = FlagReranker("BAAI/bge-reranker-v2-m3",
+                        use_fp16=True,
+                        cache_dir="./",
+                        device="cuda")
 
 
 class RerankParam(BaseModel):

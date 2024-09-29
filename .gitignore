@@ -1,3 +1,4 @@
 .venv
 __pycache__
 *.tar
+models--BAAI--bge-reranker-v2-m3
